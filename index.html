@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đông Á Sách</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="./img/logoDA.png" width="100" height="100"/>
+     
+  </header>
+  <div>
+    <div class="header-1">
+      <a href="#" class="logo"> <i class="fas fa-book"></i>ĐÔNG Á BOOK</a>
+      <form action ="" class="search-form">
+       <input type="search" name="" placeholder="search here..." id="seach-box">
+       <label for="seach-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="icons">
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <button onclick="document.getElementById('id01').style.display='block'" class="buttonuser" style="font-size: 30px;"><i class="fas fa-user"></i></button>
+        <div id="id01" class="modal">
+     
+            <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src=
+    "./img/logoDA.png" alt="Avatar" class="avatar">
+                </div>
+     
+                <div class="container">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+     
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+     
+                    <button type="submit">Login</button>
+                    <input type="checkbox" checked="checked"> Remember me
+                </div>
+     
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button-log" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+     
+        <script>
+            var modal = document.getElementById('id01');
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+        
+      </div>
+ </div>
+  <main>
+    
+    <div class="intro">
+      <h1>Tủ Sách Đông Á</h1>
+      <p>Sách là món quà ý nghĩa và luôn gợi nhớ đến người tặng.</p>
+      <button>Mua ngay</button>
+    </div>
+    
+    </div>
+    <div class="achievements">
+      <div class="work">
+        <i class="fas fa-truck"></i>
+        <p class="work-heading">Vận chuyển</p>
+        <p class="work-text">Thời gian giao hàng trong nội thành là 24 giờ làm việc tính từ thời điểm đơn hàng được xác nhận (qua email). Khu vực khác: Thời gian dự kiến chậm nhất 72 giờ làm việc.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-lock"></i>
+        <p class="work-heading">Bảo mật</p>
+        <p class="work-text">Dữ liệu cá nhân của thành viên sẽ được lưu trữ cho đến khi có yêu cầu ban quản trị hủy bỏ. Còn lại trong mọi trường hợp thông tin cá nhân thành viên sẽ được bảo mật trên máy chủ của chúng tôi.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-exchange-alt"></i>
+        <p class="work-heading">Bảo hành</p>
+        <p class="work-text">Hàng lỗi hỏng do vận chuyển, phản hồi ngay khi nhận hàng: đổi mới, miễn phí vận chuyển. Khách hàng có kích ứng về da với sản phẩm: hoàn tiền và nhận lại sản phẩm.</p>
+      </div>     
+      </div>
+
+      <div class="featured_boks">
+
+        <h1>NỔI BẬT</h1>
+
+        <div class="featured_book_box">
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="./img/book1.jpg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>DÁM BỊ GHÉT</h2>
+                    <p class="writer">Kishimi Ichiro, Koga Fumitake</p>
+                    <div class="categories">Lãng mạn</div>
+                    <p class="book_price">126,400₫<sub><del>158,000₫</del></sub></p>
+                    <a href="#" class="f_btn">Mua ngay</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="./img/book2.jpg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>CHUỘC TỘI</h2>
+                    <p class="writer">Minato Kanae</p>
+                    <div class="categories">Tiểu thuyết</div>
+                    <p class="book_price">86,400₫<sub><del>108,000₫</del></sub></p>
+                    <a href="#" class="f_btn">Mua ngay</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="./img/book3.jpg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>BẢO BÌNH</h2>
+                    <p class="writer">Vũ Lập Nhật</p>
+                    <div class="categories">Văn học Việt Nam</div>
+                    <p class="book_price">63,200₫<sub><del>79,000₫</del></sub></p>
+                    <a href="#" class="f_btn">Mua ngay</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="./img/book4.jpg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>BẠCH DẠ HÀNH</h2>
+                    <p class="writer">Higashino Keigo</p>
+                    <div class="categories">Trinh thám</div>
+                    <p class="book_price">167,200₫<sub><del>209,000₫</del></sub></p>
+                    <a href="#" class="f_btn">Mua ngay</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="./img/book5.jpg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>BỈ VỎ</h2>
+                    <p class="writer">Nguyên Hồng</p>
+                    <div class="categories">Văn học Việt Nam</div>
+                    <p class="book_price">72,000₫<sub><del>90,000₫</del></sub></p>
+                    <a href="#" class="f_btn">Mua ngay</a>
+                </div>               
+
+            </div>
+            <div class="featured_book_card">
+
+              <div class="featurde_book_img">
+                  <img src="./img/book6.jpg">
+              </div>
+
+              <div class="featurde_book_tag">
+                  <h2>2666</h2>
+                  <p class="writer">Roberto Bolaño</p>
+                  <div class="categories">Văn học Nước ngoài</div>
+                  <p class="book_price">295,200₫<sub><del>369,000₫</del></sub></p>
+                  <a href="#" class="f_btn">Mua ngay</a>
+              </div>               
+
+          </div>
+
+          <div class="featured_book_card">
+
+              <div class="featurde_book_img">
+                  <img src="./img/book7.jpg">
+              </div>
+
+              <div class="featurde_book_tag">
+                  <h2>AMRITA</h2>
+                  <p class="writer">Banana Yoshimoto</p>
+                  <div class="categories">Văn học Nước ngoài</div>
+                  <p class="book_price">87,200₫<sub><del>109,000₫</del></sub></p>
+                  <a href="#" class="f_btn">Mua ngay</a>
+              </div>               
+
+          </div>
+
+          <div class="featured_book_card">
+
+              <div class="featurde_book_img">
+                  <img src="./img/book8.jpg">
+              </div>
+
+              <div class="featurde_book_tag">
+                  <h2>BÉ GÌ - ĐÂU</h2>
+                  <p class="writer">Julia Dohaldson</p>
+                  <div class="categories">Thiếu nhi</div>
+                  <p class="book_price">44,000₫<sub><del>55,000₫</del></sub></p>
+                  <a href="#" class="f_btn">Mua ngay</a>
+              </div>               
+
+          </div>
+          </div>
+
+          <div class="banner">
+            
+        </div>
+     
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; 2023 Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
